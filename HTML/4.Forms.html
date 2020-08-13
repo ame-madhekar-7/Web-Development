@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+
+
+<body>
+    <h3>This is HTML FORMS</h3>
+    <!-- P.S. - See what difference the label and select tags make when the webiste is live. -->
+
+    <!-- Type form and hence use 'form' tag to initialize a form. action attribute is used to send the submitted form to the (php) file in backend. -->
+    <form action="backend.php">
+        <!-- 'div' tag is used to create blocks to separate the parts. -->
+
+        <!-- Here, 'label' tag is used to advance the simple input tag. 'for' and 'id' attributes here should have the same value. -->
+        <!-- type label and hit enter to start the label tag. -->
+        <label for="name"> Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        
+        <!-- Type input and press enter to simply start a "text" type input. The name attribute helps understand the input given at the backend. -->
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br>
+
+        <!-- Here, 'input:email' is typed and entered to get type email.  -->
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+
+        <!-- 'input:date' -->
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+
+        <!-- 'input:number' -->
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+
+        <!-- 'input:checkbox' is used. the 'checked' part is added to check the box by default.  -->
+        <div>
+            Are you eligible?: <input type="checkbox" name="myEligibility" checked>
+        </div>
+        <br>
+
+        <!-- 'input:radio' is used. As name attribute is same for all, only one can be checked among these. -->
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+            Other <input type="radio" name="myGender">
+        </div>
+        <br>
+
+        <!-- Type textarea and hit enter to start the 'textarea' tag. -->
+        <div>
+            Write about yourself: <br><textarea name="myText" cols="90" rows="10"></textarea>
+        </div>
+        <br>
+
+        <!-- 'label' and 'select' tags are used to advance the simple 'input' tag. 'Selected' part is used to by default select the option. -->
+        <!-- 'option' tag is required in 'select' tag. Type option and hit enter. Attribute 'value' is just for reference at the backend. -->
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="ind">Indica</option>
+                <option value="swf">Swift</option>
+                <option value="san" selected>Santro</option>
+            </select>
+        </div>
+        <br>
+
+        <!-- 'input:submit' and 'input:reset' to submit and reset the form. -->
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+        
+    </form>
+</body>
+
+</html>
+
+<!-- While pressing 'Alt', use the keys to move entire block of code up or down. -->

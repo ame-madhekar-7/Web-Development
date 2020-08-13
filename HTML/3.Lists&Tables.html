@@ -1,0 +1,93 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists & Tables</title>
+</head>
+<body>
+    <!-- LISTS -->
+    <!-- For initiating an UNORDERED list, use tag 'ul' -->
+    <!-- Use tag 'li' for elements of a list -->
+    <h4> HTML LIST </h4>
+
+    <ul type = "circle">
+        <!-- ul types : disc, square, circle (design of bullet points) -->
+        <li>This is the first element of the unordered list.</li>
+        <li>This is the second element of the unordered list.</li>
+        <li>This is the third element of the unordered list.</li>
+    </ul>
+
+    <ol type = "i">
+        <!-- ol types : 1, A, a, I, i (design of numbers) -->
+        <li>This is the first element of the ordered list.</li>
+        <li>This is the second element of the ordered list.</li>
+        <li>This is the third element of the ordered list.</li>
+    </ol>
+
+    <!-- Nested Lists -->
+    <ol>
+        <li>First person.</li>
+        <li>Second person.
+            <ul>
+                <li>Sanny</li>
+                <li>Banny</li>
+                <li>Manny</li>
+            </ul>
+        </li>
+    </ol>
+
+    <!-- TABLES -->
+    <h4> HTML TABLE </h4>
+    <!-- For initiating an HTML table, use tag 'table' -->
+    <!-- The table must have two imp tags - 'thead' (column names) and 'tbody' (rows data) . -->
+    <!-- The 'tr' tag is used to declare any rows, inside thead and tbody both. -->
+    <table>
+        <thead>
+            <tr>
+                <!-- 'th' tag is used to declare column names inside 'tr' tag. -->
+                <th>Name of student</th>
+                <th>Roll No.</th>
+                <th>Marks</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- Declare as many 'tr' tags as many rows you want. -->
+            <!-- Use 'td' tag as many times as the no. of columns inside each 'tr' tag -->
+            <tr>
+                <td> Ameya Madhekar </td>
+                <td> 170121004 </td>
+                <td> 93.40 </td>
+                <td> Pass! </td>
+            </tr>
+            <tr>
+                <td> Harry Paaji </td>
+                <td> 170237281 </td>
+                <td> 88.60 </td>
+                <td> Pass! </td>
+            </tr>
+            <tr>
+                <td> Rohit Kamble </td>
+                <td> 173539162 </td>
+                <td> 35.80 </td>
+                <td> Fail! </td>
+            </tr>
+            <tr>
+                <td> Sanjana Sanghi </td>
+                <td> 173079173 </td>
+                <td> 94.80 </td>
+                <td> Pass! </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+
+
+</body>
+</html>
